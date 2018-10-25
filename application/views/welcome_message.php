@@ -6,22 +6,20 @@
 <!-- Custom Theme files -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<meta name="keywords" content="Travel Reservation Widget Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<!--google fonts-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href='//fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
 <!--google fonts-->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/j-forms.css">
+<link rel="stylesheet" href="<?=base_url("assets/css/font-awesome.min.css")?>">
+<link rel="stylesheet" href="<?=base_url("assets/css/j-forms.css")?>">
 
-<script src="js/jquery.1.11.1.min.js"></script>
-	<script src="js/jquery.ui.min.js"></script>
-	<script src="js/jquery.ui.timepicker.min.js"></script>
-	<script src="js/jquery.ui.touch-punch.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
-	<script src="js/jquery.form.min.js"></script>
-	<script src="js/j-forms.min.js"></script>
+<script src="<?=base_url("assets/js/jquery.1.11.1.min.js")?>"></script>
+	<script src="<?=base_url("assets/js/jquery.ui.min.js")?>"></script>
+	<script src="<?=base_url("assets/js/jquery.ui.timepicker.min.js")?>"></script>
+	<script src="<?=base_url("assets/js/jquery.ui.touch-punch.min.js")?>"></script>
+	<script src="<?=base_url("assets/js/jquery.maskedinput.min.js")?>"></script>
+	<script src="<?=base_url("assets/js/jquery.validate.min.js")?>"></script>
+	<script src="<?=base_url("assets/js/jquery.form.min.js")?>"></script>
+	<script src="<?=base_url("assets/js/j-forms.min.js")?>"></script>
 </head>
 <body>
 <!--header strat here-->
@@ -67,6 +65,9 @@
 								</label>
 								<input type="text" id="phone" name="phone" placeholder="phone/mobile">
 							</div>
+						</div>
+						<div class="span6 unit">
+							<input type="submit" value="valider">
 						</div>
 					</div>
 				</fieldset>
