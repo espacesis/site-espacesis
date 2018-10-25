@@ -2,14 +2,12 @@
 <html>
 	<head>
 		<title>cyan Flat ui kit Website Template | Home :: w3layouts</title>
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery.min.js"></script>
-		 <!-- Custom Theme files -->
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link href="<?=base_url("assets/css/bootstrap.css");?>" rel='stylesheet' type='text/css' />
+		<script src="<?=base_url("assets/js/jquery.min.js");?>"></script>
+		<link href="<?=base_url("assets/css/style.css");?>" rel='stylesheet' type='text/css' />
    		 <!-- Custom Theme files -->
    		 <!----font-Awesome----->
-   		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+   		<link rel="stylesheet" href="<?=base_url("assets/fonts/css/font-awesome.min.css")?>">
    		<!----font-Awesome----->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -20,8 +18,8 @@
 		<div class="container">
 			<div class="top-header">
 				<!----script-for-sidepanle-nav---->
-				<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
-				<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+				<link type="text/css" rel="stylesheet" href="<?=base_url("assets/")?>css/jquery.mmenu.all.css" />
+				<script type="text/javascript" src="<?=base_url("assets/")?>js/jquery.mmenu.js"></script>
 				<script type="text/javascript">
 					//	The menu on the left
 					$(function() {
