@@ -1,30 +1,29 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Travel Reservation Widget  Responsive Widget Template | Home :: w3layouts</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<!-- Custom Theme files -->
+<title>ESPACE ESIS</title>
+<link href="<?php echo base_url("assets\css\style.css");?>" rel="stylesheet" type="text/css" media="all"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href='//fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
 <!--google fonts-->
-<link rel="stylesheet" href="<?=base_url("assets/css/font-awesome.min.css")?>">
-<link rel="stylesheet" href="<?=base_url("assets/css/j-forms.css")?>">
+<link rel="stylesheet" href="<?=base_url("assets\css\font-awesome.min.css")?>">
+<link rel="stylesheet" href="<?=base_url("assets\css\j-forms.css")?>">
 
-<script src="<?=base_url("assets/js/jquery.1.11.1.min.js")?>"></script>
-	<script src="<?=base_url("assets/js/jquery.ui.min.js")?>"></script>
-	<script src="<?=base_url("assets/js/jquery.ui.timepicker.min.js")?>"></script>
-	<script src="<?=base_url("assets/js/jquery.ui.touch-punch.min.js")?>"></script>
-	<script src="<?=base_url("assets/js/jquery.maskedinput.min.js")?>"></script>
-	<script src="<?=base_url("assets/js/jquery.validate.min.js")?>"></script>
-	<script src="<?=base_url("assets/js/jquery.form.min.js")?>"></script>
-	<script src="<?=base_url("assets/js/j-forms.min.js")?>"></script>
+<script src="<?=base_url("assets\js\jquery.1.11.1.min.js")?>"></script>
+	<script src="<?=base_url("assets\js\jquery.ui.min.js")?>"></script>
+	<script src="<?=base_url("assets\js\jquery.ui.timepicker.min.js")?>"></script>
+	<script src="<?=base_url("assets\js\jquery.ui.touch-punch.min.js")?>"></script>
+	<script src="<?=base_url("assets\js\jquery.maskedinput.min.js")?>"></script>
+	<script src="<?=base_url("assets\js\jquery.validate.min.js")?>"></script>
+	<script src="<?=base_url("assets\js\jquery.form.min.js")?>"></script>
+	<script src="<?=base_url("assets\js\j-forms.min.js")?>"></script>
 </head>
 <body>
 <!--header strat here-->
 <div class="element">
-	 <h1>Travel Reservation Widget</h1>
+	 <h1>ESPACE ESIS</h1>
 	 
 	<div class="wrapper">
 
@@ -36,19 +35,31 @@
 			<div class="content">
 
 				<fieldset>
-					<h2>Personal Info</h2>
-					<!-- start name -->
+					<h2>Formulaire d'inscription</h2>
 					<div class="unit">
 						<div class="input">
 							<label class="icon-right" for="name">
 								<i class="fa fa-user"></i>
 							</label>
-							<input type="text" id="name" name="name" placeholder="your name">
+							<input type="text" id="name" name="nom" placeholder="Entrez le nom">
 						</div>
 					</div>
-					<!-- end name -->
-
-					<!-- start email phone -->
+					<div class="unit">
+						<div class="input">
+							<label class="icon-right" for="name">
+								<i class="fa fa-user"></i>
+							</label>
+							<input type="text" id="name" name="post" placeholder="Entrez le post-nom">
+						</div>
+					</div>
+					<div class="unit">
+						<div class="input">
+							<label class="icon-right" for="name">
+								<i class="fa fa-user"></i>
+							</label>
+							<input type="text" id="name" name="prenom" placeholder="Entrez le prenom">
+						</div>
+					</div>
 					<div class="j-row">
 						<div class="span6 unit">
 							<div class="input">
@@ -67,18 +78,23 @@
 							</div>
 						</div>
 						<div class="span6 unit">
-							<input type="submit" value="valider">
+							<input type="submit" class="btn" value="valider">
 						</div>
 					</div>
 				</fieldset>
 			</div>
 		</form>
 	</div>
-
-
-	
 </div>
-<!--header end here-->
+<style>
+	.btn{
+		border: none;
+		color: #fff;
+		background-color: rgb(0, 162, 232);
+		padding : 2% 2%;
+		width: 20%;
+	}
+</style>
 <div class="copy-right">
 	<p>© Copyright <?=date('Y')?> | Espace Esis</p>
 </div>
