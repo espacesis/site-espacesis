@@ -1,105 +1,90 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<title>ESPACE ESIS</title>
-<link href="<?php echo base_url("assets/css/style.css");?>" rel="stylesheet" type="text/css" media="all"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Comix Under_construction  Website Template | Home :: w3layouts</title>
+<!--css-->
+<link href="<?php echo base_url("assets/css/style.css"); ?>" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.countdown.css") ?>" />
+<!--/css-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href='//fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
-<!--google fonts-->
-<link rel="stylesheet" href="<?php echo base_url("assets/css/font-awesome.min.css");?>">
-<link rel="stylesheet" href="<?php echo base_url("assets/css/j-forms.css");?>">
-
-<script src="<?php echo base_url("assets/js/jquery.1.11.1.min.js");?>"></script>
-	<script src="<?php echo base_url("assets/js/jquery.ui.min.js");?>"></script>
-	<script src="<?php echo base_url("assets/js/jquery.ui.timepicker.min.js");?>"></script>
-	<script src="<?php echo base_url("assets/js/jquery.ui.touch-punch.min.js");?>"></script>
-	<script src="<?php echo base_url("assets/js/jquery.maskedinput.min.js");?>"></script>
-	<script src="<?php echo base_url("assets/js/jquery.validate.min.js");?>"></script>
-	<script src="<?php echo base_url("assets/js/jquery.form.min.js");?>"></script>
-	<script src="<?php echo base_url("assets/js/j-forms.min.js");?>"></script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+<!--fonts-->
+<script src="<?php echo base_url("assets/js/jquery-1.11.1.min.js"); ?>" type="text/javascript"></script>
+<script src="<?php echo base_url("assets/js/jquery.countdown.js"); ?>"></script>
+<script src="<?php echo base_url("assets/js/script.js"); ?>"></script>
 </head>
 <body>
-<!--header strat here-->
-<div class="element">
-	 <h1>ESPACE ESIS</h1>
-	 
-	<div class="wrapper">
+<style>
+	.card {
+		position : inherit;
+		margin-left: 20%;
+		width : 60%;
+		background-color : rgba(8, 51, 116, 0.7);
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+	}
+	.card h4{
+		text-align: center;
+		font-size: 2em;
 
-		<?php echo form_open('register')?>
-			
-			<!-- end /.header-->
+	}
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
 
-			<div class="content">
-
-				<fieldset>
-					<h2 style="color: rgb(0, 162, 232);">Formulaire d'inscription</h2>
-					<div class="unit">
-						<div class="input">
-							<label class="icon-right" for="name">
-								<i class="fa fa-user"></i>
-							</label>
-							<input type="text" id="name" name="nom" placeholder="Entrez le nom" required="">
-						</div>
-					</div>
-					<div class="unit">
-						<div class="input">
-							<label class="icon-right" for="name">
-								<i class="fa fa-user"></i>
-							</label>
-							<input type="text" id="name" name="prenom" placeholder="Entrez le prenom" required="">
-						</div>
-					</div>
-					<div class="unit">
-						<div class="input">
-							<label class="icon-right" for="name">
-								<i class="fa fa-user"></i>
-							</label>
-							<select id="name" name="promotion" placeholder="Entrez la promotion" required="">
-								<option>PREPA</option>
-								<option>G1</option>
-								<option>G2 SI</option>
-								<option>G2 GST</option>
-							</select>
-						</div>
-					</div>
-						<div class="span6 unit">
-							<div class="input">
-								<label class="icon-right" for="email">
-									<i class="fa fa-envelope-o"></i>
-								</label>
-								<input type="text" id="name" name="matricule" placeholder="Entrer le matricule" required="">
-							</div>
-						</div>
-						<div class="span6 unit">
-							<div class="input">
-								<label class="icon-right" for="phone">
-									<i class="fa fa-phone"></i>
-								</label>
-								<input type="text" id="phone" name="phone" placeholder="phone/mobile" required="">
-							</div>
-						</div>
-						<div class="span6 unit">
-							<input type="submit" class="btn" value="valider">
-						</div>
-				</fieldset>
-			</div>
-		</form>
+	.container {
+		padding: 2px 16px;
+	}
+	input[type="text"]{
+    	padding: 2% 3%;
+    	width: 40%;
+	}
+	select{
+		padding: 2% 3%;
+    	width: 36%;
+	}
+    input[type="submit"]{
+    	padding: 1% 2%;
+    	border: none;
+    	background-color: rgb(0, 162, 232);
+		color: #fff;
+		width: 20%;
+    }
+    input[type="submit"]:hover{
+    	border: solid 1px;
+    	border-color: rgb(0, 162, 232);
+	}
+	
+</style>
+<div class="content">
+	<h2>ESPACE ESIS</h2><br>
+	<div class="card">
+		<br><h4>formulaire dinscription</h4><br>
+		<div class="container">
+			<?php echo form_open('register');?>
+                <input type="text" name="nom" placeholder="Nom : " required=""><br><br>
+                <input type="text" name="prenom" placeholder="Prenom : " required=""><br><br>
+				<input type="text" name="matricule" placeholder="Matricule : " required=""><br><br>
+				<label>Promotion : </label><select name="promotion">
+                    <option>PREPA</option>
+                    <option>G1</option>
+				</select><br><br>
+				<input type="text" name="phone" placeholder="Numero : " required=""><br><br>
+				<input type="submit" value="valider">
+				<br><br><br><br>
+			<?php echo form_close();?>
+		</div>
 	</div>
 </div>
-<style>
-	.btn{
-		border: none;
-		color: #fff;
-		background-color: rgb(0, 162, 232);
-		padding : 2% 2%;
-		width: 20%;
-	}
-</style>
-<div class="copy-right">
-	<p>© Copyright <?=date('Y')?> | Espace Esis</p>
+<br>
+<!--/content-->
+<div class="content-bottom">
+	<div class="copy-rights">
+		<p style="color:#F5EFEB;">© Copyright <?php echo date('Y'); ?> | ESPACE ESIS</p>
+	</div>
 </div>
-
 </body>
 </html>
