@@ -1,25 +1,21 @@
 <?php
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
 	public function index()
 	{
 		$this->load->view('welcome_message');
+	}
+	public function query_to_membre(){
+
+		$nomuser = strip_tags($this->input->post('nom'));
+		$prenom = strip_tags($this->input->post('post-nom'));
+		$promotion = strip_tags($this->input->post('promotion'));
+		$matricule = strip_tags($this->input->post('matricule'));
+		$data['name_new_membre'] = $nomuser;
+		$data['last_name_new_membre'] = $prenom;
+		$this->espace_model->add_membre_to_db($nomuser,$prenom,$prenom,$matricule);
+		$this->load->view('succes',$data);
 	}
 }
