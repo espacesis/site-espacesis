@@ -49,7 +49,7 @@
 							<label class="icon-right" for="name">
 								<i class="fa fa-user"></i>
 							</label>
-							<input type="text" id="name" name="post" placeholder="Entrez le post-nom">
+							<input type="text" id="name" name="prenom" placeholder="Entrez le post-nom">
 						</div>
 					</div>
 					<div class="unit">
@@ -57,7 +57,7 @@
 							<label class="icon-right" for="name">
 								<i class="fa fa-user"></i>
 							</label>
-							<input type="text" id="name" name="prenom" placeholder="Entrez le prenom">
+							<input type="text" id="name" name="promotion" placeholder="Entrez la promotion">
 						</div>
 					</div>
 					<div class="j-row">
@@ -66,7 +66,7 @@
 								<label class="icon-right" for="email">
 									<i class="fa fa-envelope-o"></i>
 								</label>
-								<input type="email" id="email" name="email" placeholder="your email">
+								<input type="email" id="name" name="matricule" placeholder="Entrer le matricule">
 							</div>
 						</div>
 						<div class="span6 unit">
@@ -74,7 +74,7 @@
 								<label class="icon-right" for="phone">
 									<i class="fa fa-phone"></i>
 								</label>
-								<input type="text" id="phone" name="phone" placeholder="phone/mobile">
+								<input type="text" id="phone" name="numero" placeholder="phone/mobile">
 							</div>
 						</div>
 						<div class="span6 unit">
