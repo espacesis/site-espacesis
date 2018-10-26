@@ -17,7 +17,7 @@ class Welcome extends CI_Controller {
 	public function add(){
 
 		$nomuser = strip_tags($this->input->post('nom'));
-		$prenom = strip_tags($this->input->post('post-nom'));
+		$prenom = strip_tags($this->input->post('prenom'));
 		$promotion = strip_tags($this->input->post('promotion'));
 		$matricule = strip_tags($this->input->post('matricule'));
 		$phone = strip_tags($this->input->post('phone'));
