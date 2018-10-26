@@ -19,9 +19,9 @@ class Espace_model extends CI_Model {
 
         $this->db->set('nom',$nom);
         $this->db->set('prenom',$prenonom);
-        $this->db->set('promotion',$promotion);
         $this->db->set('matricule',$matricule);
         $this->db->set('numero',$telephone);
+        $this->db->set('promotion',$promotion);
         return $this->db->insert($this->table_espace_esis_membre);
     }
  //=========================================================================================================================
