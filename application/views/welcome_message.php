@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>ESPACE ESIS</title>
-<link href="<?php echo base_url("assets\css\style.css");?>" rel="stylesheet" type="text/css" media="all"/>
+<link href="<?php echo base_url("assets/cssstyle.css");?>" rel="stylesheet" type="text/css" media="all"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -27,7 +27,7 @@
 	 
 	<div class="wrapper">
 
-		<form action="j-folder" method="post" class="j-forms j-multistep" id="j-forms" novalidate>
+		<?php echo form_open('welcome/add')?>
 
 			
 			<!-- end /.header-->
@@ -41,7 +41,7 @@
 							<label class="icon-right" for="name">
 								<i class="fa fa-user"></i>
 							</label>
-							<input type="text" id="name" name="nom" placeholder="Entrez le nom">
+							<input type="text" id="name" name="nom" placeholder="Entrez le nom" require="">
 						</div>
 					</div>
 					<div class="unit">
@@ -49,7 +49,7 @@
 							<label class="icon-right" for="name">
 								<i class="fa fa-user"></i>
 							</label>
-							<input type="text" id="name" name="prenom" placeholder="Entrez le post-nom">
+							<input type="text" id="name" name="prenom" placeholder="Entrez le prenom" require="">
 						</div>
 					</div>
 					<div class="unit">
@@ -57,7 +57,7 @@
 							<label class="icon-right" for="name">
 								<i class="fa fa-user"></i>
 							</label>
-							<input type="text" id="name" name="promotion" placeholder="Entrez la promotion">
+							<input type="text" id="name" name="promotion" placeholder="Entrez la promotion" require="">
 						</div>
 					</div>
 					<div class="j-row">
@@ -66,7 +66,7 @@
 								<label class="icon-right" for="email">
 									<i class="fa fa-envelope-o"></i>
 								</label>
-								<input type="email" id="name" name="matricule" placeholder="Entrer le matricule">
+								<input type="text" id="name" name="matricule" placeholder="Entrer le matricule" require="">
 							</div>
 						</div>
 						<div class="span6 unit">
@@ -74,7 +74,7 @@
 								<label class="icon-right" for="phone">
 									<i class="fa fa-phone"></i>
 								</label>
-								<input type="text" id="phone" name="numero" placeholder="phone/mobile">
+								<input type="text" id="phone" name="phone" placeholder="phone/mobile" require="">
 							</div>
 						</div>
 						<div class="span6 unit">
