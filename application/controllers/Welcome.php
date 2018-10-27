@@ -24,7 +24,7 @@ class Welcome extends CI_Controller {
 		$data['name_new_membre'] = $nomuser;
 		$data['last_name_new_membre'] = $prenom;
 		$this->espace_model->add_membre_to_db($nomuser,$prenom,$prenom,$matricule,$phone);
-		$this->load->view('succes',$data);
+		$this->load->view('acceuil',$data);
 	}
 //=============================================================================================================================
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Comix Under_construction  Website Template | Home :: w3layouts</title>
+<title>ESPACE ESIS</title>
 <!--css-->
 <link href="<?php echo base_url("assets/css/style.css"); ?>" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.countdown.css") ?>" />
@@ -44,7 +44,7 @@
 	}
 	select{
 		padding: 2% 3%;
-    	width: 36%;
+    	width: 35%;
 	}
     input[type="submit"]{
     	padding: 1% 2%;
