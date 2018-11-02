@@ -25,5 +25,9 @@ class Espace_model extends CI_Model {
         return $this->db->insert($this->table_espace_esis_membre);
     }
  //=========================================================================================================================
-     
+ public function authentification($matricule){
+    return $this->db->select('matricule')->where('matricule', $matricule)->get($this->table_espace_esis_membre)->result();  
+
+} 
+ 
 }
