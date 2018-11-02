@@ -3,7 +3,7 @@
 <head>
 <title>ESPACE ESIS</title>
 <!--css-->
-<link href="<?php echo base_url("assets/css/style.css"); ?>" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url("assets/css/style1.css"); ?>" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.countdown.css") ?>" />
 <!--/css-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -38,9 +38,10 @@
 	.container {
 		padding: 2px 16px;
 	}
-	input[type="text"]{
+	input[type="text"],input[type="password"]{
     	padding: 2% 3%;
     	width: 40%;
+		border: none;
 	}
 	select{
 		padding: 2% 3%;
@@ -57,25 +58,24 @@
     	border: solid 1px;
     	border-color: rgb(0, 162, 232);
 	}
-	
+	a {
+		text-decoration : none;
+		color : rgb(0, 162, 232);
+	}
 </style>
 <div class="content">
 	<h2>ESPACE ESIS</h2><br>
 	<div class="card">
-		<br><h4>formulaire dinscription</h4><br>
+		<br><h4>Connexion</h4><br>
 		<div class="container">
-			<?php echo form_open('register');?>
-                <input type="text" name="nom" placeholder="Nom : " required=""><br><br>
-                <input type="text" name="prenom" placeholder="Prenom : " required=""><br><br>
+			<?php echo form_open('login');?>
 				<input type="text" name="matricule" placeholder="Matricule : " required=""><br><br>
-				<label>Promotion : </label><select name="promotion">
-                    <option>PREPA</option>
-                    <option>G1</option>
-				</select><br><br>
-				<input type="text" name="phone" placeholder="Numero : " required=""><br><br>
+				<input type="password" name="mdp" placeholder="Mot de passe : " required=""><br><br><br>
 				<input type="submit" value="valider">
-				<br><br><br><br>
+				<br><br><br>
 			<?php echo form_close();?>
+			<p>Vous n'avez pas de compte ? cliquer sur le lien <a href="<?php echo base_url("new_compte"); ?>">créer</a> pour vous enregistrer </p>
+			<br><br><br>
 		</div>
 	</div>
 </div>
