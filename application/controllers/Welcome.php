@@ -29,4 +29,24 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 	}
 //=============================================================================================================================
+
+//La page de connexion
+public function login() {
+	$mdp = strip_tags($this->input->post('mdp'));
+	$matricule = strip_tags($this->input->post('matricule'));
+	$r = $this->espace_model->authentification($matricule);
+	if($r and $mdp == "esis@") {
+		$this->load->view('header');
+		$this->load->view('acceuil');
+		$this->load->view('footer');
+	}
+	else {
+		$this->index();
+	}
 }
+public function creation() {
+	$this->load->view('inscription');
+}
+//=============================================================================================================
+}
+
